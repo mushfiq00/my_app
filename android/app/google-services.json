@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "663461546713",
+    "project_id": "petofia-4d054",
+    "storage_bucket": "petofia-4d054.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663461546713:android:4c7047f21b88558b794cc8",
+        "android_client_info": {
+          "package_name": "com.petofia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663461546713-lj038fferatfg0er49uoou5dpe4d8o60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT9K6mJ6h07XUjuIVJujSsmdKzWyq1tMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663461546713-lj038fferatfg0er49uoou5dpe4d8o60.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
