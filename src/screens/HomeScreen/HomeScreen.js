@@ -5,10 +5,21 @@ import Banner from '../../assets/images/home_banner.png'
 import HomeItem from './HomeItem'
 import { width } from '../../utils/constants'
 import { SafeAreaView } from 'react-native-safe-area-context'
-
+import HomeImg1 from '../../assets/images/home3.jpeg'
+import HomeImg2 from '../../assets/images/home4.jpeg'
+import HomeImg3 from '../../assets/images/home5.jpeg'
+import DogImg from '../../assets/images/dog1.png'
 const HomeScreen = ({ navigation }) => {
 
-  const tempData = Array(10).fill('a');
+  const tempData = [{ profName: 'Ans', id: 1,img:HomeImg1 },
+  { profName: 'Jiffrin', id: 2,img:HomeImg3 },
+  { profName: 'shah', id: 3 ,img:HomeImg2},
+  { profName: 'Arun', id: 4 ,img:DogImg},
+  { profName: 'Jhon', id: 5 ,img:DogImg},
+  { profName: 'Mikle', id: 6 ,img:HomeImg1},
+  { profName: 'Anas', id: 7 ,img:HomeImg3},
+  { profName: 'some', id: 7 ,img:HomeImg2},
+  ];
 
 
   return (
@@ -24,7 +35,7 @@ const HomeScreen = ({ navigation }) => {
           }
           contentContainerStyle={styles.list}
           data={tempData}
-          renderItem={() => <HomeItem />}
+          renderItem={( {item} ) => <HomeItem item={item} />}
           keyExtractor={item => item}
           numColumns={2}
         />

@@ -11,12 +11,12 @@ const HomeItem = ({ item }) => {
         <View style={styles.container} >
             <Image
                 style={styles.img}
-                source={DogImg}
+                source={item.img}
             />
             <View style={styles.footer} >
                 <View style={{ flexDirection: 'row' }} >
                     <Image source={ProfImg} style={styles.acIco} />
-                    <Text style={styles.name} >Jiffrin</Text>
+                    <Text style={styles.name} >{item.profName}</Text>
                 </View>
                 <Image source={FavIcoRed} style={styles.fav} />
             </View>
@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
         backgroundColor: "red",
         margin: 10,
         alignItems: 'center',
-        shadowColor:'black',
-        elevation:5
+        shadowColor: 'black',
+        elevation: 5
     },
     img: {
         width: (width / 2 - 20),
